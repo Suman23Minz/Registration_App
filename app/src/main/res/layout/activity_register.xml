@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Please Enter your details to register on the app"
+            android:textAlignment="center"
+            android:textColor="@color/heading"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvfullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvheading"
+            android:layout_marginTop="20dp"
+            android:text="Full Name *"
+            android:textColor="#190101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_enter_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvfullname"
+            android:layout_marginTop="5dp"
+            android:hint="Enter your full name "
+            android:inputType="textPersonName"
+            android:minHeight="50dp" />
+
+<!--        second box -->
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_enter_name"
+            android:layout_marginTop="20dp"
+            android:text="Email Address"
+            android:textColor="#190101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_enter_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvemail"
+            android:layout_marginTop="5dp"
+            android:hint="Enter your email  "
+            android:inputType="textEmailAddress"
+            android:minHeight="50dp" />
+
+<!--        third box goes here -->
+        <TextView
+            android:id="@+id/tvdob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_enter_email"
+            android:layout_marginTop="20dp"
+            android:text="Date Of Birth *"
+            android:textColor="#190101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_enter_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvdob"
+            android:layout_marginTop="5dp"
+            android:hint="Enter your date of birth (dd/mm/yy) "
+            android:inputType="textPersonName"
+            android:minHeight="50dp" />
+
+<!--        4th box goes here -->
+        <TextView
+            android:id="@+id/tvgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_enter_dob"
+            android:layout_marginTop="20dp"
+            android:text="Gender *"
+            android:textColor="#190101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvgender"
+            android:id="@+id/radio_group_register_gender">
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:text="Female"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:minHeight="48dp"
+                android:padding="5dp"
+                android:text="Male"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+
+        </RadioGroup>
+
+<!--        5th box goes here -->
+
+        <TextView
+            android:id="@+id/tvmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group_register_gender"
+            android:layout_marginTop="20dp"
+            android:text="Mobile No *"
+            android:textColor="#190101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_enter_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvmobile"
+            android:layout_marginTop="5dp"
+            android:hint="Enter Your Mobile Number"
+            android:inputType="phone"
+            android:minHeight="50dp" />
+
+<!--        6th box goes here -->
+        <TextView
+            android:id="@+id/tvpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_enter_mobile"
+            android:layout_marginTop="20dp"
+            android:text="Password *"
+            android:textColor="#190101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvpassword"
+            android:layout_marginTop="5dp"
+            android:hint="Enter Password "
+            android:inputType="textPassword"
+            android:minHeight="50dp" />
+
+<!--        7th box goes here -->
+
+        <TextView
+            android:id="@+id/tvrepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_enter_password"
+            android:layout_marginTop="20dp"
+            android:text="Confirm Password "
+            android:textColor="#190101"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_enter_repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvrepassword"
+            android:layout_marginTop="5dp"
+            android:hint="Re-type Password "
+            android:inputType="textPassword"
+            android:minHeight="50dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regbutton"
+            android:layout_below="@id/et_enter_repassword"
+            android:text="Register"
+            android:textSize="20dp"
+            android:layout_margin="20dp"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</ScrollView>
